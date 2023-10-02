@@ -67,7 +67,7 @@ let g:mathmode_cjk_ime=com.apple.keylayout.German-DIN-2137
 let g:mathmode_cjk_ime=com.apple.inputmethod.SCIM.ITABC
 "繁体拼音
 let g:mathmode_cjk_ime=com.apple.inputmethod.TCIM.Pinyin
-“希腊语
+"希腊语
 let g:mathmode_cjk_ime=com.apple.keylayout.Greek
 ```
 ## 致谢
