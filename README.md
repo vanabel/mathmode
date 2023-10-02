@@ -9,6 +9,7 @@ MathMode Vim 插件是一个用于在 macOS 系统上实现中英文自动切换
 - 在插入模式下，根据当前字符自动切换输入法为中文或英文。
 - 在退出插入模式并返回正常模式时，自动切换输入法为英文。
 - 在数学环境下，自动切换输入法为英文（需要安装 vimtex 插件）。
+- 在退出数学环境时，通过当前字符是否为`$`, 自动切换输入法为中文或英文（建议安装[UltiSnap](https://github.com/SirVer/ultisnips)自动补全插件）。
 - 基于 macOS 的输入法切换工具 macism，因此仅适用于 macOS 系统。
 
 ## 安装
@@ -94,6 +95,7 @@ The MathMode Vim plugin is a tool designed to automate the switching between you
 - In insert mode, it automatically switches the input method to Chinese or English based on the current character.
 - When exiting insert mode and returning to normal mode, it automatically switches the input method to English.
 - In mathematical environments, it automatically switches the input method to English (requires the installation of the VimTeX plugin).
+- In the context of exiting a mathematical environment, automatically switch the input method between Chinese and English based on whether the current character is `$` (It is recommended to install the [UltiSnap](https://github.com/SirVer/ultisnips) autocomplete plugin).
 - It relies on the macOS input method switching tool, macism, and is therefore only applicable to macOS systems.
 
 ## Installation

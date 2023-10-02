@@ -42,7 +42,7 @@ endfunction
 function! s:insert_entered()
 	if g:mathmode_auto_detect
 		let l:char = getline('.')[col('.') - 2]
-		let l:cjk_mode = l:char >= "\x80"
+		let l:cjk_mode = (l:char >= "\x80" || l:char == "$")
 	else
 		let l:cjk_mode = 1
 	endif
@@ -60,6 +60,6 @@ endfunction
 
 augroup MATHMODE
 	autocmd!
-	autocmd InsertEnter * :call s:insert_entered()
+	autocmd InsertEnter,CursorMovedI * :call s:insert_entered()
 	autocmd InsertLeave * :call s:insert_leave()
 augroup END
